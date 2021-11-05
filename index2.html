@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .top {
+            height: 80px;
+            width: 100%;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .top>nav {
+        margin: 0 auto;
+        }
+        .img img {
+            height: 70px;     
+            margin-left: 0;  
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+        .menu>li {
+            margin: 8px;
+        }
+        .menu>li>a {
+            text-decoration: none;
+            color: #D8E9A8;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+        .menu>li>a:hover {
+            text-decoration: underline;
+        }
+        .ad {
+            margin: 15px 15px 0;
+        }
+        .ad img {
+            width: 100%;
+            height: 100px;
+        }
+        /* início do grid */
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 220px;
+            margin-top: 15px;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .content a {
+            text-decoration: none;
+        }
+        .content img {
+            max-width: 400px;
+        }
+        .content>article:nth-child(1) {
+            margin-top: 0;
+        }
+        .content>article {
+            margin: 15px;
+        }
+        .first {
+            grid-column: 1/4;
+        }
+        .first>a {
+            display: flex;
+        }
+        .first p {
+            font-size: 19px;
+            margin-left: 15px;
+        }
+        /* lateral */
+
+        /* .sidebar {
+            display: flex;
+            flex-direction: column; */
+        /* } */
+        /* .sidebar {
+            flex-wrap: wrap;
+        } */
+        .sidebar {
+            margin-right: 15px;
+        }
+        .sidebar>article {
+            height: 80px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+        .sidebar>article:not(:last-child) {
+            border-bottom: 2px solid #d3d3d3;
+        }
+        .sidebar img {
+            width: 100%;
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .content a:hover img, .sidebar a:hover img{
+            opacity: 0.5;
+        }
+        .sidebar a {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            font-size: 14px;
+            gap: 10px;
+        }
+        .content a p , .sidebar a p {
+            color: #000;
+        }
+        .content a:hover p , .sidebar a:hover p {
+            color: #4f4f4f;
+            text-decoration: underline;
+        }
+        /* footer */
+        .rodape {
+            height: 250px;
+            background-color: #1a1a1a; 
+            margin-bottom: 0;
+            width: 100%;
+            display: flex;
+            gap: 100px;
+        }
+        .rodape>div {
+            margin-top: 20px;
+        }
+        .rodape>div:first-child {
+            margin-left: 20px;
+        }
+        .rodape li {
+            list-style: none;
+            padding-bottom: 5px;
+        }
+        .rodape h1 {
+            font-size: 25px;
+            color: #D8E9A8;
+            padding-bottom: 10px;
+            text-transform: capitalize;
+        }
+        .social {
+            display: flex;
+        }
+        .ciencia>li>a, .negocios>li>a {
+            color: #fff;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        .negocios>li>a:hover {
+            text-decoration: underline;
+        }
+        .ciencia>li>a:hover {
+            text-decoration: underline;
+        }
+</style>
+</head>
+<body>
+    <header class="top">
+        <div class="img">
+            <img src="./img/globo2.svg">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">negócios</a></li>
+                <li><a href="#">mundo</a></li>
+                <li><a href="#">ciência</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="ad">
+        <img src="./img/banner.jpeg">
+    </div>
+    <div class="container">
+        <section class="content">
+           <article class="first">
+               <a href="#">
+               <img src="./img/pexels-lisa-1092644.jpg" alt="">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               </a>
+            </article>
+           <article>
+               <a href="#">
+               <img src="./img/melina-kiefer-qzok8Z6V-Ko-unsplash.jpg" alt="">
+               <p>Título da notícia</p>
+               </a>
+           </article>
+           <article>
+               <a href="#">
+               <img src="./img/pexels-lisa-1092644.jpg" alt="">
+               <p>Título da notícia</p>
+                </a>
+           </article>
+           <article>
+               <a href="#">
+                    <img src="./img/pexels-flickr-145939.jpg" alt="">
+                    <p>Título da notícia</p>
+               </a>
+           </article>
+           <article>
+               <a href="#">
+                    <img src="./img/pexels-pixabay-459953.jpg" alt="">
+                    <p>Título da notícia</p>
+               </a>
+           </article>
+           <article>
+               <a href="#">
+                    <img src="./img/pexels-picjumbocom-461077.jpg" alt="">
+                    <p>Título da notícia</p>
+               </a>
+           </article>
+           <article>
+                <a href="#">
+                    <img src="./img/pexels-josh-sorenson-1714208.jpg" alt="">
+                    <p>Título da notícia</p>
+                </a>
+           </article>
+        </section>
+        <aside class="sidebar">
+            <article>
+                <a href="#">
+                <img src="./img/imagem.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <img src="./img/imagem.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <img src="./img/imagem.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <img src="./img/imagem.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                <img src="./img/imagem.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </a>
+            </article>
+        </aside>
+    </div>
+    <footer class="rodape">
+        <div>
+            <h1>negócios</h1>
+            <ul class="negocios">
+                <li>
+                    <a href="#">email marketing</a>
+                </li>
+                <li>
+                    <a href="#">hospedagem</a>
+                </li>
+                <li>
+                    <a href="#">loja virtual</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>ciência</h1>
+            <ul class="ciencia">
+                <li>
+                    <a href="#">revista</a>
+                </li>
+                <li>
+                    <a href="#">jogos</a>
+                </li>
+                <li>
+                    <a href="#">livros</a>
+                </li>
+                <li>
+                    <a href="#">TV Ciência</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>redes sociais</h1>
+            <ul class="social">
+                <li>
+                    <a href="#"><img src="./img/icons8-facebook-48.png" alt="" title="Facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img/icons8-twitter-48.png" alt="" title="Twitter"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="./img//icons8-instagram-48.png" alt="" title="Instagram"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
