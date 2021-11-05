@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .top_header {
+            height: 80px;
+            width: 100%;
+            background-color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            
+        }
+        .img img {
+            height: 70px;     
+            margin-left: 0;       
+        }
+        .top_header nav {
+            margin: 0 auto;
+            position: relative;
+        } 
+        .list {
+            list-style: none;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            padding: 0;
+        }
+        .list li {
+            display: inline-block;
+            margin: 0 3px;
+            text-transform: uppercase;
+        }
+        .list li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        .list li a:hover {
+            color: rgb(172, 170, 170);
+        }
+
+        /* ad */
+        .ad {
+            width:100%;
+            height: 100px;
+            position: absolute;
+            top:80px;
+            left:0;
+        }
+        .ad img {
+            width: 100%;
+            height: 80px;
+        }
+        /* Início do Grid */
+        .grid {
+            margin-top: 90px;
+            margin-left: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            max-width: 80%;
+            min-width: 270px;
+            gap: 10px;
+            border: 1px solid black;
+            height: auto;
+        }
+        .banner {
+            width: 900px;
+            height: 150px;
+        }
+        .banner {
+            width: auto;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            margin-bottom: 15px;
+        }
+        .grid img {
+            width: 100%;
+        }
+
+         /* Início aside */
+
+        .lateral {
+            display: block; 
+            list-style: none;
+            height: 650px;
+            position: fixed;
+            top: 155px;
+            right: 0;
+            bottom: 0;
+            padding: 0;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: column;
+            width: 18%;
+            border: 1px solid red;
+        }
+        .lateral img {
+            height: 80px;
+        }
+        /* .lateral {
+            margin: 5px;
+        } */
+        .lateral li a{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-decoration: none;
+            list-style: none;
+            font-size: 15px;
+            position: sticky;
+            top: 0;
+            bottom: 0;
+            margin-left: 10px;
+            padding: 10px;
+            color: black;
+        }
+        .lateral img:hover {
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ad">
+        <img src="./img/banner.jpeg">
+    </div>
+    <header class="top_header">
+        <div class="img">
+            <img src="./img/globe.jpg">
+        </div>
+        <nav>
+            <ul class="list">
+                <li> <a href="#">home</a></li>
+                <li> <a href="#">negócios</a></li>
+                <li> <a href="#">mundo</a></li>
+                <li> <a href="#">ciências</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="grid">
+            <div class="banner"><img src="./img/banner.jpeg" alt="imagem"></div>
+            <div><img src="./img/pexels-lisa-1092644.jpg" alt="imagem"></div>
+            <div><img src="./img/img_6.png" alt="imagem"></div>
+            <div><img src="./img/img_1.png" alt="imagem"></div>
+            <div><img src="./img/img_6.png" alt="imagem"></div>
+            <div><img src="./img/img_1.png" alt="imagem"></div>
+            <div><img src="./img/img_6.png" alt="imagem"></div>
+        </div>
+    </section>
+    <aside>
+        <ul class="lateral">
+            <li><a href="#"><img src="./img/imagem.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+            <li><a href="#"><img src="./img/imagem.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+            <li><a href="#"><img src="./img/imagem.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+            <li><a href="#"><img src="./img/imagem.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+            <li><a href="#"><img src="./img/imagem.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
+        </ul>
+    </aside>
+</body>
+</html>
