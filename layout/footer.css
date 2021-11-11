@@ -1,0 +1,38 @@
+.rodape {
+    height: 250px;
+    background-color: #1a1a1a; 
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+}
+.rodape>div {
+    margin-top: 20px;
+}
+.rodape>div:first-child {
+    margin-left: 20px;
+}
+.rodape li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+.rodape h1 {
+    font-size: 25px;
+    color: #D8E9A8;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+.social {
+    display: flex;
+}
+.ciencia>li>a, .negocios>li>a {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.negocios>li>a:hover {
+    text-decoration: underline;
+}
+.ciencia>li>a:hover {
+    text-decoration: underline;
+}

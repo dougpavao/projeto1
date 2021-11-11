@@ -1,0 +1,15 @@
+.top {
+    height: 80px;
+    width: 100%;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.top>nav {
+margin: 0 auto;
+}
+.logo img {
+    height: 70px;     
+    margin-left: 0;  
+}

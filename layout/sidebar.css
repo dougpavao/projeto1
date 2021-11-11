@@ -1,0 +1,33 @@
+.sidebar {
+    margin-right: 15px;
+}
+.sidebar>article {
+    height: 80px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+.sidebar>article:not(:last-child) {
+    border-bottom: 2px solid #d3d3d3;
+}
+.sidebar img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+.sidebar a {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 14px;
+    gap: 10px;
+}
+.sidebar a:hover img{
+    opacity: 0.5;
+}
+.sidebar a p {
+    color: #000;
+}
+.sidebar a:hover p {
+    color: #4f4f4f;
+    text-decoration: underline;
+}
